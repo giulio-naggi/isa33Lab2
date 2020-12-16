@@ -1,0 +1,38 @@
+Warning: Design 'FPmul' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : resources
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Tue Nov 24 11:38:19 2020
+****************************************
+
+Resource Sharing Report for design FPmul in file
+        ../src/fpmul_stage1_struct.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r346     | DW01_add     | width=9    |               | I2/add_138           |
+| r348     | DW01_inc     | width=9    |               | I2/add_147           |
+| r350     | DW_mult_uns  | a_width=32 |               | I2/mult_157          |
+|          |              | b_width=32 |               |                      |
+| r352     | DW01_inc     | width=25   |               | I3/I11/add_45        |
+| r354     | DW01_add     | width=8    |               | I3/I9/add_41_aco     |
+| r356     | DW01_add     | width=8    |               | I4/I1/add_41_aco     |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| I2/mult_157        | DW_mult_uns      | pparch (area,speed)                 |
+|                    |                  | mult_arch: benc_radix4              |
+| I3/I11/add_45      | DW01_inc         | pparch (area,speed)                 |
+| I2/add_147         | DW01_inc         | apparch (area)     |                |
+===============================================================================
+
+1

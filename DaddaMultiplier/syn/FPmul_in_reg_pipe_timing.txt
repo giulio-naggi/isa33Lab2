@@ -1,0 +1,124 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Sat Nov 28 11:48:50 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I1/B_SIG_reg[2]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: I2/reg_1/OUT_DATA_reg[47]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  I1/B_SIG_reg[2]/CK (DFF_X1)                             0.00       0.00 r
+  I1/B_SIG_reg[2]/Q (DFF_X1)                              0.09       0.09 r
+  U5801/ZN (XNOR2_X1)                                     0.06       0.15 r
+  U5928/ZN (NAND2_X1)                                     0.04       0.19 f
+  U4002/ZN (AND2_X1)                                      0.04       0.23 f
+  U5740/ZN (NAND3_X1)                                     0.04       0.27 r
+  U5485/ZN (AND3_X1)                                      0.06       0.33 r
+  U5758/Z (XOR2_X1)                                       0.07       0.40 r
+  U5757/ZN (XNOR2_X1)                                     0.06       0.47 r
+  U4071/Z (XOR2_X1)                                       0.07       0.54 r
+  U4070/ZN (XNOR2_X1)                                     0.06       0.60 r
+  U5759/ZN (XNOR2_X1)                                     0.06       0.66 r
+  U4156/ZN (XNOR2_X1)                                     0.04       0.70 f
+  I2/DADDA/add_139/A[9] (FPmul_DW01_add_4)                0.00       0.70 f
+  I2/DADDA/add_139/U295/ZN (OR2_X1)                       0.06       0.75 f
+  I2/DADDA/add_139/U406/ZN (AOI21_X1)                     0.04       0.80 r
+  I2/DADDA/add_139/U412/ZN (OAI21_X1)                     0.03       0.83 f
+  I2/DADDA/add_139/U405/ZN (AOI21_X1)                     0.04       0.87 r
+  I2/DADDA/add_139/U411/ZN (OAI21_X1)                     0.03       0.89 f
+  I2/DADDA/add_139/U398/ZN (AOI21_X1)                     0.04       0.93 r
+  I2/DADDA/add_139/U399/ZN (OAI21_X1)                     0.03       0.96 f
+  I2/DADDA/add_139/U396/ZN (AOI21_X1)                     0.04       1.00 r
+  I2/DADDA/add_139/U397/ZN (OAI21_X1)                     0.03       1.03 f
+  I2/DADDA/add_139/U392/ZN (AOI21_X1)                     0.04       1.07 r
+  I2/DADDA/add_139/U400/ZN (OAI21_X1)                     0.03       1.10 f
+  I2/DADDA/add_139/U401/ZN (AOI21_X1)                     0.04       1.14 r
+  I2/DADDA/add_139/U403/ZN (OAI21_X1)                     0.03       1.17 f
+  I2/DADDA/add_139/U324/ZN (AOI21_X1)                     0.04       1.21 r
+  I2/DADDA/add_139/U410/ZN (OAI21_X1)                     0.03       1.25 f
+  I2/DADDA/add_139/U327/ZN (AOI21_X1)                     0.04       1.29 r
+  I2/DADDA/add_139/U409/ZN (OAI21_X1)                     0.04       1.32 f
+  I2/DADDA/add_139/U253/ZN (NAND2_X1)                     0.04       1.37 r
+  I2/DADDA/add_139/U256/ZN (NAND3_X1)                     0.04       1.40 f
+  I2/DADDA/add_139/U141/ZN (NAND2_X1)                     0.03       1.44 r
+  I2/DADDA/add_139/U137/ZN (NAND3_X1)                     0.04       1.48 f
+  I2/DADDA/add_139/U299/ZN (NAND2_X1)                     0.04       1.51 r
+  I2/DADDA/add_139/U301/ZN (NAND3_X1)                     0.04       1.55 f
+  I2/DADDA/add_139/U386/ZN (NAND2_X1)                     0.04       1.59 r
+  I2/DADDA/add_139/U183/ZN (NAND3_X1)                     0.04       1.62 f
+  I2/DADDA/add_139/U220/ZN (NAND2_X1)                     0.04       1.66 r
+  I2/DADDA/add_139/U223/ZN (NAND3_X1)                     0.04       1.70 f
+  I2/DADDA/add_139/U292/ZN (NAND2_X1)                     0.03       1.73 r
+  I2/DADDA/add_139/U174/ZN (NAND3_X1)                     0.04       1.77 f
+  I2/DADDA/add_139/U202/ZN (NAND2_X1)                     0.04       1.80 r
+  I2/DADDA/add_139/U175/ZN (NAND3_X1)                     0.04       1.84 f
+  I2/DADDA/add_139/U310/ZN (NAND2_X1)                     0.04       1.87 r
+  I2/DADDA/add_139/U313/ZN (NAND3_X1)                     0.04       1.91 f
+  I2/DADDA/add_139/U213/ZN (NAND2_X1)                     0.04       1.95 r
+  I2/DADDA/add_139/U188/ZN (NAND3_X1)                     0.04       1.99 f
+  I2/DADDA/add_139/U192/ZN (NAND2_X1)                     0.03       2.02 r
+  I2/DADDA/add_139/U189/ZN (NAND3_X1)                     0.04       2.06 f
+  I2/DADDA/add_139/U227/ZN (NAND2_X1)                     0.04       2.10 r
+  I2/DADDA/add_139/U229/ZN (NAND3_X1)                     0.04       2.13 f
+  I2/DADDA/add_139/U262/ZN (NAND2_X1)                     0.03       2.16 r
+  I2/DADDA/add_139/U199/ZN (NAND3_X1)                     0.04       2.20 f
+  I2/DADDA/add_139/U274/ZN (NAND2_X1)                     0.04       2.24 r
+  I2/DADDA/add_139/U235/ZN (NAND3_X1)                     0.04       2.28 f
+  I2/DADDA/add_139/U245/ZN (NAND2_X1)                     0.04       2.31 r
+  I2/DADDA/add_139/U233/ZN (NAND3_X1)                     0.04       2.35 f
+  I2/DADDA/add_139/U304/ZN (NAND2_X1)                     0.04       2.39 r
+  I2/DADDA/add_139/U165/ZN (NAND3_X1)                     0.04       2.42 f
+  I2/DADDA/add_139/U317/ZN (NAND2_X1)                     0.03       2.46 r
+  I2/DADDA/add_139/U319/ZN (NAND3_X1)                     0.04       2.50 f
+  I2/DADDA/add_139/U368/ZN (NAND2_X1)                     0.04       2.53 r
+  I2/DADDA/add_139/U320/ZN (NAND3_X1)                     0.04       2.57 f
+  I2/DADDA/add_139/U374/ZN (NAND2_X1)                     0.04       2.61 r
+  I2/DADDA/add_139/U376/ZN (NAND3_X1)                     0.04       2.64 f
+  I2/DADDA/add_139/U380/ZN (NAND2_X1)                     0.04       2.68 r
+  I2/DADDA/add_139/U382/ZN (NAND3_X1)                     0.04       2.72 f
+  I2/DADDA/add_139/U239/ZN (NAND2_X1)                     0.04       2.75 r
+  I2/DADDA/add_139/U232/ZN (NAND3_X1)                     0.04       2.80 f
+  I2/DADDA/add_139/U157/ZN (NAND2_X1)                     0.03       2.83 r
+  I2/DADDA/add_139/U164/ZN (NAND3_X1)                     0.03       2.87 f
+  I2/DADDA/add_139/U280/ZN (NAND2_X1)                     0.03       2.89 r
+  I2/DADDA/add_139/U282/ZN (NAND3_X1)                     0.03       2.93 f
+  I2/DADDA/add_139/U333/ZN (XNOR2_X1)                     0.05       2.98 f
+  I2/DADDA/add_139/SUM[47] (FPmul_DW01_add_4)             0.00       2.98 f
+  I2/reg_1/OUT_DATA_reg[47]/D (DFF_X1)                    0.01       2.99 f
+  data arrival time                                                  2.99
+
+  clock CLK (rise edge)                                   3.10       3.10
+  clock network delay (ideal)                             0.00       3.10
+  clock uncertainty                                      -0.07       3.03
+  I2/reg_1/OUT_DATA_reg[47]/CK (DFF_X1)                   0.00       3.03 r
+  library setup time                                     -0.04       2.99
+  data required time                                                 2.99
+  --------------------------------------------------------------------------
+  data required time                                                 2.99
+  data arrival time                                                 -2.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
